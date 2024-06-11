@@ -25,7 +25,7 @@ public class TestLostEnum {
                 assertEquals("c", EnumLosesValue.c.name());
                 fail("error expected");
             } catch(NoSuchFieldError e) {
-                assertEquals("c",e.getMessage());
+                assertEquals("Class dev.gruff.hardstop.testcases.apicheck.EnumLosesValue does not have member field 'dev.gruff.hardstop.testcases.apicheck.EnumLosesValue c'",e.getMessage());
             }
         }
     }
